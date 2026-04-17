@@ -1,0 +1,20 @@
+spring:
+  main:
+    banner-mode: off
+
+logging:
+  level:
+    root: WARN
+
+mail:
+  host: smtp.example.com
+  port: 587
+  smtp:
+    auth: true
+    # Relaxed binding: kebab-case "starttls-enable" binds to the Java field "starttlsEnable"
+    starttls-enable: true
+  default-recipients:
+    - admin@example.com
+    - ops@example.com
+  # Duration: "5s" is parsed by Spring's DurationStyle — equivalent to PT5S in ISO-8601
+  connection-timeout: 5s

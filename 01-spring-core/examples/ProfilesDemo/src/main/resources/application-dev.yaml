@@ -1,0 +1,4 @@
+# Profile-specific overrides for the "dev" profile.
+# These properties merge with application.yaml; values here take precedence.
+datasource:
+  url: jdbc:h2:mem:devdb;DB_CLOSE_DELAY=-1

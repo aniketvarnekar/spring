@@ -1,0 +1,28 @@
+spring:
+  main:
+    banner-mode: off
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # Expose all endpoints for the demo — restrict access with Security in production
+        include: "*"
+
+  endpoint:
+    health:
+      # Show full health detail including custom indicators
+      show-details: always
+      show-components: always
+
+  # Actuator info endpoint — populate from build properties in production CI/CD
+  info:
+    env:
+      enabled: true
+
+# Arbitrary info displayed at /actuator/info
+info:
+  app:
+    name: ActuatorDemo
+    version: 1.0.0
+    description: Spring Boot Actuator demonstration

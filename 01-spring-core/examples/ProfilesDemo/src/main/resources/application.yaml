@@ -1,0 +1,15 @@
+spring:
+  main:
+    banner-mode: off
+  # Activate the dev profile by default so the app runs without extra configuration.
+  # Override at runtime with --spring.profiles.active=prod or SPRING_PROFILES_ACTIVE=prod.
+  profiles:
+    active: dev
+
+logging:
+  level:
+    root: WARN
+
+# Base datasource URL — overridden by profile-specific files below.
+datasource:
+  url: jdbc:h2:mem:base

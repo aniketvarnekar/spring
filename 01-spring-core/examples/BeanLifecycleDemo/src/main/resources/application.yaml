@@ -1,0 +1,11 @@
+# Suppress Spring Boot's default banner to keep the lifecycle output readable.
+spring:
+  main:
+    banner-mode: off
+
+logging:
+  # Reduce framework log noise so the println output from the demo beans
+  # is easy to follow without interleaved INFO-level Spring messages.
+  level:
+    root: WARN
+    com.example.beanlifecycle: INFO

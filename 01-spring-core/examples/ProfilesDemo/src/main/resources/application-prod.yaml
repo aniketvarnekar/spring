@@ -1,0 +1,5 @@
+# Profile-specific overrides for the "prod" profile.
+# In a real environment, the password would come from an environment variable or secret manager,
+# never from a committed YAML file.
+datasource:
+  url: jdbc:postgresql://prod-db-host:5432/mydb

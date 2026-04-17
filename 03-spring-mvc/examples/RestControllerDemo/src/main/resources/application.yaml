@@ -1,0 +1,12 @@
+spring:
+  main:
+    banner-mode: off
+  mvc:
+    # Enable ProblemDetail (RFC 7807) responses for Spring MVC standard exceptions
+    problemdetails:
+      enabled: true
+
+logging:
+  level:
+    root: WARN
+    com.example.restcontroller: DEBUG

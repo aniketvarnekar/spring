@@ -1,0 +1,11 @@
+spring:
+  main:
+    banner-mode: off
+
+logging:
+  level:
+    root: WARN
+
+# Override the default "Hello" message from GreetingProperties
+greeting:
+  message: "Greetings from auto-configuration"
