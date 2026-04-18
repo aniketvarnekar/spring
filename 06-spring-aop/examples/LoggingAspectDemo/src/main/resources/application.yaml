@@ -1,0 +1,9 @@
+spring:
+  main:
+    banner-mode: off
+
+logging:
+  level:
+    root: WARN
+    # Set to DEBUG to see the aspect's log output.
+    com.example.loggingaspect: DEBUG

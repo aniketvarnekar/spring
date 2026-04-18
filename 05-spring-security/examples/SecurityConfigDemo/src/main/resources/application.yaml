@@ -1,0 +1,9 @@
+spring:
+  main:
+    banner-mode: off
+
+logging:
+  level:
+    root: WARN
+    com.example.securityconfig: DEBUG
+    org.springframework.security: DEBUG

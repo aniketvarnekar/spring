@@ -1,0 +1,20 @@
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    url: jdbc:h2:mem:repodemodb;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    root: WARN
+    com.example.repository: INFO
+    # Show bound parameter values (Hibernate 6+ uses a separate logger for parameters)
+    org.hibernate.orm.jdbc.bind: TRACE

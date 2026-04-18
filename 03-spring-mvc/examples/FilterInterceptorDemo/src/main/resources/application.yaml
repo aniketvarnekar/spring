@@ -1,0 +1,9 @@
+spring:
+  main:
+    banner-mode: off
+
+logging:
+  level:
+    root: WARN
+    # Show INFO from filter and interceptor so the execution order is visible
+    com.example.filterinterceptor: INFO

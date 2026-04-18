@@ -1,0 +1,16 @@
+spring:
+  main:
+    banner-mode: off
+
+security:
+  jwt:
+    # HMAC-SHA256 key, Base64-encoded. Must be at least 256 bits (32 bytes).
+    # Generate with: openssl rand -base64 32
+    # This value is for local development only; use environment variables or secrets management in production.
+    secret: dGhpcyBpcyBhIHRlc3Qgc2VjcmV0IGtleSBmb3IgZGVtbw==
+    expiration-ms: 3600000  # 1 hour
+
+logging:
+  level:
+    root: WARN
+    com.example.jwtauth: DEBUG

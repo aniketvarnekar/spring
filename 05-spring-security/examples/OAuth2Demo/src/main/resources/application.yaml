@@ -1,0 +1,16 @@
+spring:
+  main:
+    banner-mode: off
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # For a real authorization server, use jwk-set-uri or issuer-uri instead.
+          # This symmetric secret is used only for the self-contained demo and tests.
+          # The tests generate tokens with the same secret key in-process.
+          secret-key: dGhpcyBpcyBhIHRlc3Qgc2VjcmV0IGtleSBmb3IgZGVtbw==
+
+logging:
+  level:
+    root: WARN
+    com.example.oauth2demo: DEBUG

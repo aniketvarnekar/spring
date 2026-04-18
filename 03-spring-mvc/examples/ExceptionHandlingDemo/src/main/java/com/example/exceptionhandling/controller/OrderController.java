@@ -18,11 +18,10 @@ public class OrderController {
 
     @GetMapping("/{id}")
     public Map<String, String> getOrder(@PathVariable String id) {
-        return switch (id) {
+        switch (id) {
             case "conflict" -> throw new ConflictException("An order with a duplicate reference already exists");
-            case "error" -> throw new RuntimeException("Simulated unexpected failure");
-            // Any other ID triggers not found
-            default -> throw new OrderNotFoundException(id);
-        };
+            case "error"    -> throw new RuntimeException("Simulated unexpected failure");
+            default         -> throw new OrderNotFoundException(id);
+        }
     }
 }

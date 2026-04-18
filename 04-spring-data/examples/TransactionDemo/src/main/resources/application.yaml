@@ -1,0 +1,17 @@
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    url: jdbc:h2:mem:txdemodb;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+logging:
+  level:
+    root: WARN
+    com.example.transaction: INFO
+    # Show transaction boundary begin/commit/rollback
+    org.springframework.transaction: DEBUG
