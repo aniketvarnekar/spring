@@ -36,7 +36,7 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http,
 
 ### Role vs Authority
 
-```
+```text
 GrantedAuthority string | hasRole("X") | hasAuthority("X")
 ------------------------+---------------+------------------
 "ROLE_ADMIN"            | hasRole("ADMIN") = true | hasAuthority("ROLE_ADMIN") = true
@@ -107,7 +107,7 @@ public Order getOrder(String orderId) { ... }
 
 ### permitAll(), denyAll(), anonymous()
 
-```
+```text
 permitAll()           — allows access without authentication (including anonymous)
 denyAll()             — denies access to everyone, including authenticated users
 authenticated()       — requires authentication (not anonymous)

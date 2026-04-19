@@ -50,7 +50,7 @@ public class CachingAspect {
 
 Call stack for a method that is covered by all three:
 
-```
+```text
 SecurityAspect.around (before proceed)
   TransactionAspect.around (before proceed)
     CachingAspect.around (before proceed)

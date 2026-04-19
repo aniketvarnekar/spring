@@ -56,7 +56,7 @@ The `required = false` attribute prevents a `NoSuchBeanDefinitionException` when
 
 Spring resolves `@Autowired` injection points in this order:
 
-```
+```text
 1. Match by type  →  find all beans assignable to the injection point type
 2. Match by name  →  if multiple candidates, narrow by field/parameter name
 3. @Qualifier    →  narrow further by qualifier value
@@ -97,7 +97,7 @@ public class CheckoutService {
 
 A circular dependency exists when bean A requires bean B and bean B requires bean A (directly or transitively). With constructor injection, Spring cannot resolve this at all — it throws a `BeanCurrentlyInCreationException` at startup, which is the correct and desirable behavior because a genuine circular dependency is usually a design flaw.
 
-```
+```text
 BeanCurrentlyInCreationException: Is there an unresolvable circular reference?
   A → B → A
 ```

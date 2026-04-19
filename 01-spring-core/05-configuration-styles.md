@@ -75,7 +75,7 @@ public class AppConfig { }
 
 Stereotype annotations form a hierarchy:
 
-```
+```text
 @Component
   ├── @Service       (marks service-layer beans; no added semantics today)
   ├── @Repository    (marks persistence-layer beans; enables exception translation)

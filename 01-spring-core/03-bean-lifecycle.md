@@ -14,7 +14,7 @@ The destruction phase runs only when the `ApplicationContext` is explicitly clos
 
 ### Full Lifecycle Sequence
 
-```
+```text
 1.  BeanDefinition registered (by BeanFactoryPostProcessors if needed)
 2.  Instantiation (constructor called)
 3.  Property population (@Autowired fields/setters injected)

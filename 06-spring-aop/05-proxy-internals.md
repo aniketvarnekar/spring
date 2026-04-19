@@ -12,7 +12,7 @@ Understanding the proxy mechanism is essential for diagnosing the self-invocatio
 
 Used when the target bean implements at least one interface and `proxyTargetClass` is false (the default). The proxy implements the same interface(s) as the target and is backed by `java.lang.reflect.Proxy`. The proxy class is generated at runtime.
 
-```
+```text
 Caller → Proxy (implements OrderService) → Target (OrderServiceImpl)
 ```
 
@@ -25,7 +25,7 @@ Constraints:
 
 Used when the target bean does not implement any interface, or when `proxyTargetClass = true` is configured. CGLIB generates a subclass of the target class at runtime and overrides its methods to insert the advice.
 
-```
+```text
 Caller → CGLIBProxy extends OrderServiceImpl → OrderServiceImpl (target)
 ```
 

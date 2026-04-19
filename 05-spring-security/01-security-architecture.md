@@ -50,7 +50,7 @@ Multiple `SecurityFilterChain` beans are ordered by `@Order`. The first chain wh
 
 ### AuthenticationManager and ProviderManager
 
-```
+```text
 Request with credentials
         │
         ▼
@@ -127,7 +127,7 @@ taskExecutor.execute(SecurityContextRunnable.create(() -> doWork(), context));
 
 ### The FilterChainProxy Architecture
 
-```
+```text
 HTTP Request
     │
     ▼

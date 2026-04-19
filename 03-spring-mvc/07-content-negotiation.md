@@ -14,7 +14,7 @@ Adding support for new response formats — for example, CSV for tabular data or
 
 ### Accept Header Strategy
 
-```
+```text
 Client sends:  Accept: application/json, application/xml;q=0.9, */*;q=0.8
 
 Spring evaluates converters in order:

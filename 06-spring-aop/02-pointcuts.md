@@ -12,7 +12,7 @@ The most important pointcut designators in Spring AOP are `execution`, `within`,
 
 The primary pointcut designator. Selects method join points by return type, class, method name, and parameters.
 
-```
+```text
 execution(modifiers? return-type declaring-type? method-name(params) throws?)
 ```
 

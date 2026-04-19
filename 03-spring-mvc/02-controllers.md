@@ -57,7 +57,7 @@ public class HybridController {
 
 `HttpMessageConverter<T>` converts between HTTP request/response streams and Java objects. The `RequestMappingHandlerAdapter` selects a converter based on the handler's parameter/return type and the request's `Content-Type` / response's `Accept` headers.
 
-```
+```text
 Default converters (registered by Spring Boot with spring-boot-starter-web):
 
 Priority  Converter                                  Handles

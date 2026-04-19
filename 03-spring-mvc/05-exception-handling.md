@@ -156,7 +156,7 @@ public ResponseEntity<ProblemDetail> handleApiException(ApiException ex) {
 
 ### HandlerExceptionResolver Chain
 
-```
+```text
 ExceptionHandlerExceptionResolver     — @ExceptionHandler methods (highest priority)
   ↓ (if unhandled)
 ResponseStatusExceptionResolver       — @ResponseStatus on exception classes

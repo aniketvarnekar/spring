@@ -14,7 +14,7 @@ The container bootstrap process is a two-phase pipeline. In the first phase, all
 
 ### ApplicationContext Implementations
 
-```
+```text
 BeanFactory
   └── ApplicationContext
         ├── ConfigurableApplicationContext
@@ -70,7 +70,7 @@ The absence of automatic `BeanPostProcessor` detection in a raw `BeanFactory` is
 
 ### Container Bootstrap Phases
 
-```
+```text
 1. Load configuration
    │  (XML parsing, component scanning, @Configuration processing)
    │

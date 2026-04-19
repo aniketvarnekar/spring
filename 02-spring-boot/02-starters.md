@@ -20,7 +20,7 @@ A starter jar typically contains only:
 
 When a starter bundles auto-configuration directly (the simpler approach), the jar has both. When they are separated (the library pattern), you have:
 
-```
+```text
 my-service-spring-boot-starter/
   pom.xml  (depends on my-service-spring-boot-autoconfigure + my-service-core)
 
@@ -63,7 +63,7 @@ public class MyServiceProperties {
 }
 ```
 
-```
+```text
 # src/main/resources/META-INF/spring/
 # org.springframework.boot.autoconfigure.AutoConfiguration.imports
 com.example.myservice.autoconfigure.MyServiceAutoConfiguration

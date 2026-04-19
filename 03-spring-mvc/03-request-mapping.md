@@ -130,7 +130,7 @@ public DataResponse process(@RequestBody DataRequest request) { ... }
 
 When multiple handlers match a request, Spring selects the most specific one using this precedence (higher in the list wins):
 
-```
+```text
 1. Exact path match  >  wildcard match
 2. More specific method  >  no method constraint
 3. More parameters/headers constraints  >  fewer

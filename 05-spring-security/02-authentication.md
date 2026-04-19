@@ -14,7 +14,7 @@ Password encoding is not optional. Storing plain-text passwords in any productio
 
 ### UsernamePasswordAuthenticationToken Flow
 
-```
+```text
 POST /login  with username + password
         │
         ▼

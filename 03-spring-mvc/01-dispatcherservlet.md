@@ -14,7 +14,7 @@ The `DispatcherServlet` maintains its own `WebApplicationContext`, called the "s
 
 ### Request Processing Pipeline
 
-```
+```text
 HTTP Request
      │
      ▼

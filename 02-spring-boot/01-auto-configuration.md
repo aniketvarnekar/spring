@@ -14,13 +14,13 @@ Auto-configuration classes have a fixed ordering relative to each other, express
 
 ### AutoConfiguration.imports
 
-```
+```text
 META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports
 ```
 
 This file (one fully qualified class name per line) is what `AutoConfigurationImportSelector` reads to discover all auto-configuration candidates. Spring Boot ships with hundreds of entries here. Adding a custom entry to this file in your own jar is how you register a custom auto-configuration:
 
-```
+```text
 com.example.mylib.autoconfigure.MyServiceAutoConfiguration
 ```
 
@@ -82,7 +82,7 @@ public class GreetingAutoConfiguration {
 
 Run the application with `--debug` or set `logging.level.org.springframework.boot.autoconfigure=DEBUG` to activate the `ConditionEvaluationReport`. This report lists three categories:
 
-```
+```text
 =========================
 AUTO-CONFIGURATION REPORT
 =========================

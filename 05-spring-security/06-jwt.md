@@ -18,7 +18,7 @@ The JJWT library (io.jsonwebtoken) is the most common third-party library for pa
 
 ### Token Structure and Claims
 
-```
+```text
 header.payload.signature
 
 Header:  {"alg":"HS256","typ":"JWT"}

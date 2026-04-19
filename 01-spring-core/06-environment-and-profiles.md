@@ -16,7 +16,7 @@ Profiles extend the property system into the bean definition space. A `@Profile`
 
 From highest priority to lowest (higher overrides lower):
 
-```
+```text
 1.  Command-line arguments (--server.port=9090)
 2.  SPRING_APPLICATION_JSON (env var or system property)
 3.  OS environment variables
@@ -96,7 +96,7 @@ Register the class as a bean with `@EnableConfigurationProperties(MailProperties
 
 Spring Boot's binding engine normalizes property keys, so all of the following resolve to the same property:
 
-```
+```text
 mail.smtp.starttls-enable    (kebab-case — preferred in files)
 mail.smtp.starttlsEnable     (camelCase)
 mail.smtp.starttls_enable    (underscore)

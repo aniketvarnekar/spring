@@ -128,7 +128,7 @@
 
 ## Bean Lifecycle — Callback Order
 
-```
+```text
 1.  Instantiation (constructor)
 2.  BeanNameAware.setBeanName()
 3.  BeanFactoryAware.setBeanFactory()
@@ -195,7 +195,7 @@
 
 ## Pointcut Expression Quick Reference
 
-```
+```text
 execution(modifiers? returnType declaringType? methodName(params) throws?)
 
 execution(* com.example..*(..))       — any method in com.example or sub-packages

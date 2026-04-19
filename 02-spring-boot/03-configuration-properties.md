@@ -112,7 +112,7 @@ Constructor binding requires that exactly one constructor is present (or one is 
 
 All of the following property keys bind to the field `myProperty`:
 
-```
+```text
 myservice.my-property      (kebab-case — preferred for .yaml files)
 myservice.myProperty       (camelCase)
 myservice.my_property      (underscore)

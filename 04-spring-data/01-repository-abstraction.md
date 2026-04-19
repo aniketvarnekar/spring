@@ -14,7 +14,7 @@ Custom repository behavior — logic that cannot be expressed through method nam
 
 ### Repository Hierarchy
 
-```
+```text
 Repository<T, ID>                         — marker interface
   └── CrudRepository<T, ID>               — save, findById, findAll, count, delete, exists
         └── PagingAndSortingRepository    — findAll(Sort), findAll(Pageable)
@@ -32,7 +32,7 @@ For reactive stores, use `ReactiveCrudRepository`. For MongoDB, use `MongoReposi
 
 ### How RepositoryFactoryBean Works
 
-```
+```text
 ApplicationContext bootstrap
   │
   ├── @EnableJpaRepositories scans for interfaces extending Repository<T, ID>

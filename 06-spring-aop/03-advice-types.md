@@ -152,7 +152,7 @@ public Object cacheAround(ProceedingJoinPoint pjp) throws Throwable {
 
 When multiple advice types are declared in the same `@Aspect` class and match the same join point, they execute in this order:
 
-```
+```text
 @Around (before proceed)
   → @Before
     → target method

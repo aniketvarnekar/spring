@@ -46,7 +46,7 @@ When a prototype-scoped bean is declared as a dependency of another bean via `@A
 
 The central challenge with shorter-lived scopes in a longer-lived bean is that injection happens once at container startup. If a singleton holds a reference to a request-scoped bean, that reference becomes stale or invalid once the request ends.
 
-```
+```text
 Singleton (lives for application lifetime)
   └── @Autowired RequestScopedBean (created once at startup — WRONG)
                                     ↑

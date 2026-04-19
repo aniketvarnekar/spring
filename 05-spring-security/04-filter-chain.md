@@ -14,7 +14,7 @@ Custom authentication mechanisms — API key authentication, JWT validation, mul
 
 ### Key Filters and Their Positions
 
-```
+```text
 Order  Filter                                    Role
 -----  ----------------------------------------  -----------------------------------------
 100    DisableEncodeUrlFilter                    Prevents session ID in URL
@@ -55,7 +55,7 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 
 This filter replaced `SecurityContextPersistenceFilter` in Spring Security 6. It loads the `SecurityContext` from the `SecurityContextRepository` at the start of the request and clears it after the response is committed:
 
-```
+```text
 Request start:
   SecurityContextRepository.loadDeferredContext(request)
   → SecurityContext loaded (from session for stateful apps, empty for stateless)
