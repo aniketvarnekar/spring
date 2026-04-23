@@ -1,4 +1,4 @@
-# Spring Notes — CLAUDE.md
+# Spring Notes — AGENTS.md
 
 This repository is a comprehensive Spring Framework reference for experienced Java developers. It covers the Spring ecosystem from the IoC container through Spring Boot, MVC, Data, Security, and AOP, with runnable Maven example projects for every major concept. The writing targets advanced readers who need precise, internally consistent explanations of how Spring works under the hood, not introductory tutorials.
 
@@ -12,7 +12,7 @@ This repository is a comprehensive Spring Framework reference for experienced Ja
 
 ```
 spring-notes/
-  CLAUDE.md                        # This file — repo description, structure, style guide
+  AGENTS.md                        # This file — repo description, structure, style guide
   README.md                        # Root index with section table
   01-spring-core/                  # IoC container, DI, bean lifecycle, scopes, events
   02-spring-boot/                  # Auto-configuration, starters, actuator, testing
